@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veluxe Aviation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #1a1a1a;
+      background-color: #fff;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+    .testimonial {
+      font-style: italic;
+      margin-bottom: 30px;
+      padding-left: 20px;
+      border-left: 4px solid #ccc;
+    }
+    footer {
+      background: #f4f4f4;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Veluxe Aviation</h1>
+    <p>Where Luxury Takes Flight — Private Jet Charters & Elite Concierge Services</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">About Us</h2>
+    <p>Veluxe Aviation is a woman-owned private aviation and concierge brand delivering bespoke jet charters and elevated travel experiences. Headquartered in Fort Lauderdale, we offer white-glove service, tailored itineraries, and seamless coordination from takeoff to touchdown.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Client Testimonials</h2>
+    <div class="testimonial">“Veluxe Aviation delivered a flawless private jet experience from start to finish. The booking process was effortless, and their team handled every detail with precision and care.” – James Harrington</div>
+    <div class="testimonial">“Traveling with young children usually feels stressful, but Veluxe handled everything with elegance and ease. It was truly a first-class experience for our family.” – Alexandra Morgan</div>
+    <div class="testimonial">“They understand the importance of discretion, punctuality, and comfort. Every flight is seamless and professional. We trust Veluxe with all our executive travel.” – Daniel Reyes</div>
+  </section>
+
+  <footer>
+    &copy; 2025 Veluxe Aviation. All Rights Reserved.
+  </footer>
+</body>
+</html>
