@@ -1,72 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veluxe Aviation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      color: #1a1a1a;
-      background-color: #fff;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background-color: #000; color: #fff; }
     header {
-      background: #000;
-      color: #fff;
-      padding: 40px 20px;
+      background: url('https://source.unsplash.com/1600x900/?privatejet') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      margin: 0;
+      font-size: 4em;
+      color: gold;
     }
     header p {
-      font-size: 1.1em;
+      font-size: 1.5em;
       margin-top: 10px;
+      color: white;
     }
     section {
-      padding: 60px 20px;
-      max-width: 900px;
+      padding: 4em 2em;
+      max-width: 1000px;
       margin: 0 auto;
     }
-    .section-title {
-      font-size: 2em;
-      margin-bottom: 20px;
-      font-family: 'Playfair Display', serif;
+    .about, .contact, .instagram, .blog {
+      border-bottom: 1px solid #333;
+    }
+    h2 { font-family: 'Playfair Display', serif; font-size: 2em; color: gold; margin-bottom: 1em; }
+    .testimonial-carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 2em;
+      scroll-snap-type: x mandatory;
     }
     .testimonial {
-      font-style: italic;
-      margin-bottom: 30px;
-      padding-left: 20px;
-      border-left: 4px solid #ccc;
+      flex: 0 0 300px;
+      background: #111;
+      padding: 1.5em;
+      border-radius: 10px;
+      scroll-snap-align: start;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      margin-bottom: 1em;
+      padding: 1em;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      padding: 1em;
+      background: gold;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
     }
     footer {
-      background: #f4f4f4;
-      padding: 30px 20px;
       text-align: center;
+      padding: 2em;
       font-size: 0.9em;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Veluxe Aviation</h1>
-    <p>Where Luxury Takes Flight — Private Jet Charters & Elite Concierge Services</p>
+    <p>Where Luxury Takes Flight</p>
   </header>
 
-  <section>
-    <h2 class="section-title">About Us</h2>
+  <section class="about">
+    <h2>About Us</h2>
     <p>Veluxe Aviation is a woman-owned private aviation and concierge brand delivering bespoke jet charters and elevated travel experiences. Headquartered in Fort Lauderdale, we offer white-glove service, tailored itineraries, and seamless coordination from takeoff to touchdown.</p>
   </section>
 
-  <section>
-    <h2 class="section-title">Client Testimonials</h2>
-    <div class="testimonial">“Veluxe Aviation delivered a flawless private jet experience from start to finish. The booking process was effortless, and their team handled every detail with precision and care.” – James Harrington</div>
-    <div class="testimonial">“Traveling with young children usually feels stressful, but Veluxe handled everything with elegance and ease. It was truly a first-class experience for our family.” – Alexandra Morgan</div>
-    <div class="testimonial">“They understand the importance of discretion, punctuality, and comfort. Every flight is seamless and professional. We trust Veluxe with all our executive travel.” – Daniel Reyes</div>
+  <section class="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial">“Veluxe Aviation delivered a flawless private jet experience from start to finish...” – James Harrington</div>
+      <div class="testimonial">“Traveling with young children usually feels stressful, but Veluxe handled everything...” – Alexandra Morgan</div>
+      <div class="testimonial">“Discretion, punctuality, and comfort. Every flight is seamless and professional.” – Daniel Reyes</div>
+    </div>
+  </section>
+
+  <section class="instagram">
+    <h2>Instagram</h2>
+    <!-- Replace this with your embed code from LightWidget or similar -->
+    <iframe src="https://lightwidget.com/widgets/your-widget-id.html" style="width:100%;height:400px;border:0;overflow:hidden;"></iframe>
+  </section>
+
+  <section class="blog">
+    <h2>From the Blog</h2>
+    <p>Visit <a href="/blog/index.html" style="color:gold;">our blog</a> to read the latest luxury travel insights, destination highlights, and tips from our concierge experts.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
@@ -74,3 +121,4 @@
   </footer>
 </body>
 </html>
+
